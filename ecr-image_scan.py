@@ -16,7 +16,7 @@ def main():
 
     # var
     REGION = os.environ.get("AWS_REGION")
-    S3BUCKET = 'site-compliance-scans'
+    S3BUCKET = output-s3-bucket'
     TIMESTAMP = datetime.datetime.now().isoformat()
     CONTROLDATE = datetime.datetime.now() - datetime.timedelta(days=14)
     OLDIMAGE_CONTROLDATE = datetime.datetime.now() - relativedelta(months=+2)
